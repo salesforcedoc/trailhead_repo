@@ -1,43 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>Test Permission Set</label><license>Salesforce</license><applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Chatter</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Community</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Content</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__LightningService</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Marketing</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Platform</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Sales</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Service</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__ServiceConsole</application>
-        <visible>false</visible>
-    </applicationVisibilities><applicationVisibilities>
-        <application>standard__Sites</application>
-        <visible>false</visible>
-    </applicationVisibilities><objectPermissions>
+﻿<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><hasActivationRequired>false</hasActivationRequired><label>Test Permission Set</label><license>Salesforce</license>
+<objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
         <allowEdit>false</allowEdit>
