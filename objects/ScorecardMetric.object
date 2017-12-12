@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -9,9 +9,6 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides><actionOverrides>
-        <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>List</actionName>
@@ -29,38 +26,15 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides><fields>
-        <fullName>Category</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Sales</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Marketing</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Field Enablement</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Support</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Adoption</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <type>Picklist</type>
-    </fields><fields>
         <fullName>Description</fullName>
     </fields><fields>
         <fullName>Name</fullName>
     </fields><fields>
         <fullName>ReportId</fullName>
         <type>Lookup</type>
+    </fields><fields>
+        <fullName>Category</fullName>
+        <type>Picklist</type>
     </fields><fields>
         <fullName>ScorecardId</fullName>
         <type>MasterDetail</type>

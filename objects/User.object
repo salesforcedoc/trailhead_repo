@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -12,9 +12,6 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>EmailHighlightAction</actionName>
-        <type>Default</type>
-    </actionOverrides><actionOverrides>
-        <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>FreezeUserAction</actionName>
@@ -39,6 +36,9 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
         <type>Default</type>
     </actionOverrides><fields>
         <fullName>ManagerId</fullName>

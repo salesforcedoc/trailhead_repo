@@ -1,0 +1,10 @@
+<aura:component access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <body>
+    <div id="app">Loading...</div>
+    <ltng:require scripts="{!join(',', 
+                           $Resource.OrderEntry + '/OrderEntryHelper.js',
+                           'https://unpkg.com/react@15.6.0/dist/react.js',
+                           'https://unpkg.com/react-dom@15.6.0/dist/react-dom.js',
+                           $Resource.OrderEntry + '/OrderEntry.js')}"/>
+    </body>        
+</aura:component>

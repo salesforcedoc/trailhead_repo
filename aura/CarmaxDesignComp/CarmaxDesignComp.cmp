@@ -1,0 +1,678 @@
+<aura:component access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <div class="gr__design_carmax_com">
+        <head>
+            <title>The LEGOS Team | CarMax Style Guide</title>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta charset="UTF-8" />
+            <meta name="format-detection" content="telephone=no" />
+            
+            <link rel="icon" type="image/png" href="https://design.carmax.com/static/img/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="https://design.carmax.com/static/img/favicon-16x16.png" sizes="16x16" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+            <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+            <link rel="stylesheet" href="https://design.carmax.com/static/css/bundle.css" />
+        </head>
+        <body class="mdc-theme--background">
+
+            <div class="app">
+                <header class="mdc-toolbar mdc-toolbar--fixed">
+                    <div class="mdc-toolbar__row">
+                        <section class="mdc-toolbar__section mdc-toolbar__section--logo mdc-toolbar__section--align-start">
+                            <button class="material-icons mdc-toolbar__icon--menu menu">menu</button>
+                            <div class="logo-section">
+                                <img src="https://design.carmax.com/static/img/favicon-32x32.png" class="mdc-temporary-drawer__logo" alt="" />
+                            </div>
+                        </section>
+                        <section class="mdc-toolbar__section mdc-toolbar__section--nav">
+                            <nav class="mdc-select" role="listbox" tabindex="0" style="width: 92px;">
+                                <span class="mdc-select__selected-text">Components</span>
+                                <div class="mdc-simple-menu mdc-select__menu">
+                                    <ul class="mdc-list mdc-simple-menu__items">
+                                        <li class="mdc-list-item" role="option" id="domain-brand">
+                                            Brand
+                                        </li>
+                                        <li class="mdc-list-item" role="option" id="domain-components" aria-selected="true">
+                                            Components
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <nav class="mdc-list kmx-list--nav kmx-list--inline">
+                                <a class="mdc-list-item mdc-list-item--active" href="">Components</a>
+                                <a class="mdc-list-item" href="">Brand</a>
+                            </nav>
+                        </section>
+                    </div>
+                </header>
+                <div class="mdc-toolbar-fixed-adjust"></div>  
+                
+                <div class="app__container">
+                    
+                    <nav class="mdc-drawer mdc-permanent-drawer kmx-drawer--fixed">
+                        <nav class="mdc-drawer__content mdc-theme--primary-bg">
+                            <div class="mdc-list">
+                                <div class="mdc-list-group">
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Getting Started</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/getting-started/overview" class="mdc-list-item">Overview</a>
+                                    </nav>
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/getting-started/legos-team" class="mdc-list-item">The LEGOS Team</a>
+                                    </nav>
+                                    
+                                    
+                                    <div class="mdc-list-divider" role="separator"></div>
+                                    
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Foundation</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/foundation/colors" class="mdc-list-item">Colors</a>
+                                        <a href="/foundation/elevation" class="mdc-list-item">Elevation</a>
+                                        <a href="/foundation/icons" class="mdc-list-item">Icons</a>
+                                        <a href="/foundation/layout" class="mdc-list-item">Layout</a>
+                                        <a href="/foundation/typography" class="mdc-list-item mdc-list-item--active">Typography</a>
+                                    </nav>
+                                    
+                                    
+                                    <div class="mdc-list-divider" role="separator"></div>
+                                    
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Components</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/components/buttons" class="mdc-list-item">Buttons</a>
+                                        <a href="/components/checkboxes" class="mdc-list-item">Checkboxes</a>
+                                        <a href="/components/dropdowns" class="mdc-list-item">Dropdowns</a>
+                                        <a href="/components/forms" class="mdc-list-item">Forms</a>
+                                        <a href="/components/lists" class="mdc-list-item">Lists</a>
+                                        <a href="/components/radio-buttons" class="mdc-list-item">Radio Buttons</a>
+                                        <a href="/components/text-fields" class="mdc-list-item">Text Fields</a>
+                                    </nav>
+                                    
+                                </div>
+                            </div>
+                            
+                        </nav>
+                    </nav>
+                    <aside id="drawer-toggle" class="mdc-drawer mdc-temporary-drawer mdc-temporary-drawer--animating" style="">
+                        <nav class="mdc-temporary-drawer__drawer">
+                            <div class="mdc-temporary-drawer__toolbar-spacer">
+                                <img src="https://design.carmax.com/static/img/favicon-32x32.png" class="mdc-temporary-drawer__logo" alt="" />
+                            </div>
+                            <nav class="mdc-temporary-drawer__content mdc-theme--primary-bg">
+                                <div class="mdc-list">
+                                    <div class="mdc-list-group">
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Getting Started</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/getting-started/overview" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Overview</a>
+                                        </nav>
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/getting-started/legos-team" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">The LEGOS Team</a>
+                                        </nav>
+                                        
+                                        
+                                        <div class="mdc-list-divider" role="separator"></div>
+                                        
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Foundation</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/foundation/colors" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Colors</a>
+                                            <a href="/foundation/elevation" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Elevation</a>
+                                            <a href="/foundation/icons" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Icons</a>
+                                            <a href="/foundation/layout" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Layout</a>
+                                            <a href="/foundation/typography" class="mdc-list-item mdc-list-item--active" data-mdc-tabindex-handled="true" tabindex="-1">Typography</a>
+                                        </nav>
+                                        
+                                        
+                                        <div class="mdc-list-divider" role="separator"></div>
+                                        
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Components</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/components/buttons" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Buttons</a>
+                                            <a href="/components/checkboxes" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Checkboxes</a>
+                                            <a href="/components/dropdowns" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Dropdowns</a>
+                                            <a href="/components/forms" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Forms</a>
+                                            <a href="/components/lists" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Lists</a>
+                                            <a href="/components/radio-buttons" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Radio Buttons</a>
+                                            <a href="/components/text-fields" class="mdc-list-item" data-mdc-tabindex-handled="true" tabindex="-1">Text Fields</a>
+                                        </nav>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </nav>
+                        </nav>
+                    </aside>
+                    
+                    <div class="app__container__content">
+                        <section class="kmx-layout-grid max-width--md" id="Typefaces">
+                            <h1 class="kmx-typography--display-4 kmx-text-grey-900">Typography</h1>
+                            <hr class="horiz-rule--content" />
+                            <h2 class="kmx-typography--display-2">Typefaces</h2>
+                            <h3 class="kmx-typography--display-1">Montserrat</h3>
+                            <p class="kmx-typography--body-1">Considered our brand's primary font family, we use Montserrat in areas where reinforcing the brand are necessary and valuable.</p>
+                            <p class="kmx-typography--body-1">Available weights:</p>
+                            <ul class="kmx-typography--ul">
+                                <li class="kmx-typography--font-main">500 (Medium)</li>
+                            </ul>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--font-main">Montserrat 500 (Medium)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <div class="kmx-typography--display-2 kmx-typography--font-main">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘&zwnj;?&#8203;&zwnj;’&#8203;&zwnj;“&#8203;&zwnj;!&#8203;&zwnj;”&#8203;&zwnj;(&#8203;&zwnj;%&#8203;&zwnj;)&#8203;&zwnj;[&#8203;&zwnj;#&#8203;&zwnj;]&#8203;&zwnj;{&#8203;&zwnj;@&#8203;&zwnj;}&#8203;&zwnj;/&#8203;&zwnj;&amp;&#8203;&zwnj;&lt;&#8203;&zwnj;-&#8203;&zwnj;+&#8203;&zwnj;÷&#8203;&zwnj;×&#8203;&zwnj;=&#8203;&zwnj;&#8203;&zwnj;®&#8203;&zwnj;©&#8203;&zwnj;$&#8203;&zwnj;€&#8203;&zwnj;£&#8203;&zwnj;¥&#8203;&zwnj;¢&#8203;&zwnj;:&#8203;&zwnj;;&#8203;&zwnj;,&#8203;&zwnj;.*
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--font-main<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Roboto</h3>
+                            <p class="kmx-typography--body-1">Our secondary font, Roboto, is used in conjunction with our main font to help establish a clear hiearchy between the primary and secondary information on page or component.</p>
+                            <p class="kmx-typography--body-1">Available weights:</p>
+                            <ul class="kmx-typography--ul">
+                                <li class="kmx-typography--weight-300">300 (Light)</li>
+                                <li class="kmx-typography--weight-400">400 (Regular)</li>
+                                <li class="kmx-typography--weight-700">700 (Bold)</li>
+                            </ul>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-300">Roboto 300 (Light)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-300">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘&zwnj;?&#8203;&zwnj;’&#8203;&zwnj;“&#8203;&zwnj;!&#8203;&zwnj;”&#8203;&zwnj;(&#8203;&zwnj;%&#8203;&zwnj;)&#8203;&zwnj;[&#8203;&zwnj;#&#8203;&zwnj;]&#8203;&zwnj;{&#8203;&zwnj;@&#8203;&zwnj;}&#8203;&zwnj;/&#8203;&zwnj;&amp;&#8203;&zwnj;&lt;&#8203;&zwnj;-&#8203;&zwnj;+&#8203;&zwnj;÷&#8203;&zwnj;×&#8203;&zwnj;=&#8203;&zwnj;&#8203;&zwnj;®&#8203;&zwnj;©&#8203;&zwnj;$&#8203;&zwnj;€&#8203;&zwnj;£&#8203;&zwnj;¥&#8203;&zwnj;¢&#8203;&zwnj;:&#8203;&zwnj;;&#8203;&zwnj;,&#8203;&zwnj;.*
+                                        </span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--font-alt<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-400">Roboto 400 (Regular)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-400">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘&zwnj;?&#8203;&zwnj;’&#8203;&zwnj;“&#8203;&zwnj;!&#8203;&zwnj;”&#8203;&zwnj;(&#8203;&zwnj;%&#8203;&zwnj;)&#8203;&zwnj;[&#8203;&zwnj;#&#8203;&zwnj;]&#8203;&zwnj;{&#8203;&zwnj;@&#8203;&zwnj;}&#8203;&zwnj;/&#8203;&zwnj;&amp;&#8203;&zwnj;&lt;&#8203;&zwnj;-&#8203;&zwnj;+&#8203;&zwnj;÷&#8203;&zwnj;×&#8203;&zwnj;=&#8203;&zwnj;&#8203;&zwnj;®&#8203;&zwnj;©&#8203;&zwnj;$&#8203;&zwnj;€&#8203;&zwnj;£&#8203;&zwnj;¥&#8203;&zwnj;¢&#8203;&zwnj;:&#8203;&zwnj;;&#8203;&zwnj;,&#8203;&zwnj;.*
+                                        </span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--font-alt<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-700">Roboto 700 (Bold)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-700">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘&zwnj;?&#8203;&zwnj;’&#8203;&zwnj;“&#8203;&zwnj;!&#8203;&zwnj;”&#8203;&zwnj;(&#8203;&zwnj;%&#8203;&zwnj;)&#8203;&zwnj;[&#8203;&zwnj;#&#8203;&zwnj;]&#8203;&zwnj;{&#8203;&zwnj;@&#8203;&zwnj;}&#8203;&zwnj;/&#8203;&zwnj;&amp;&#8203;&zwnj;&lt;&#8203;&zwnj;-&#8203;&zwnj;+&#8203;&zwnj;÷&#8203;&zwnj;×&#8203;&zwnj;=&#8203;&zwnj;&#8203;&zwnj;®&#8203;&zwnj;©&#8203;&zwnj;$&#8203;&zwnj;€&#8203;&zwnj;£&#8203;&zwnj;¥&#8203;&zwnj;¢&#8203;&zwnj;:&#8203;&zwnj;;&#8203;&zwnj;,&#8203;&zwnj;.*
+                                        </span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--font-alt<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="horiz-rule--content" />
+                            <h2 class="kmx-typography--display-2">Style Classes</h2>
+                            <p class="kmx-typography--body-1">Elements are styled through opt in classes, not globally. This helps keep our HTML structure separate from our visual hiearchy.</p>
+                            <p class="kmx-typography--body-1">In other words, we can style <span class="kmx-typography--font-mono">&lt;h1&gt;</span> elements individually, and make them appear visually smaller or larger to the end user without compromising the importance of the <span class="kmx-typography--font-mono">&lt;h1&gt;</span> to things like SEO.</p>
+                            <hr class="horiz-rule--content" />
+                        </section>
+                        
+                        <section class="kmx-layout-grid max-width--md" id="Styles">
+                            <h2 class="kmx-typography--display-2">Styles</h2>
+                            <h3 class="kmx-typography--display-1">Display 4</h3>
+                            <p class="kmx-typography--body-1">The Display 4 style should be used sparingly, preferably no more than once on a page. Display 4 is a good option for top of page headlines that we want to draw attention to.</p>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-4">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--display-4<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 3</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-3">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--display-3<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 2</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-2">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--display-2<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--display-1<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Headline</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--headline">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--headline<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Body 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--body-1<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Body 2</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-2">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--body-2<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Links</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1">
+                                        <a href="#">Go to CarMax.com</a>
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--link<span class="token punctuation">"</span></span> <span class="token punctuation">&gt;</span></span>The way car buying should be.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Unordered List</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <ul class="kmx-typography--ul">
+                                        <li>List Item #1</li>
+                                        <li>List Item #2</li>
+                                        <li>List Item #3</li>
+                                    </ul>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--ul<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Ordered List</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <ol class="kmx-typography--ol">
+                                        <li>List Item #1</li>
+                                        <li>List Item #2</li>
+                                        <li>List Item #3</li>
+                                    </ol>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--ol<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>List Item #3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Table</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <table class="kmx-typography--body-1 kmx-table">
+                                        <caption class="kmx-typography--display-1 kmx-table__caption">Vehicle Specifications</caption>
+                                        <thead>
+                                            <tr class="kmx-table__row">
+                                                <th class="kmx-table__head-cell">Component</th>
+                                                <th class="kmx-table__head-cell kmx-typography--align-right">Specification</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody><tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Drive Type</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">2WD</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Engine Size</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">3.0L Engine</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Number of Cylinders</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">6 Cylinders</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Horsepower</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">380 Horsepower @6500 RPM</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Torque (ft-lbs)</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">339 Torque @3500 RPM</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Compression Ratio</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">11:1</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Camshaft</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">Variable Timing DOHC</td>
+                                            </tr>
+                                            <tr class="kmx-table__row">
+                                                <td class="kmx-table__cell">Engine Type</td>
+                                                <td class="kmx-table__cell kmx-typography--align-right">Supercharged</td>
+                                            </tr>
+                                        </tbody></table>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--body-1 kmx-table<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--display-1 kmx-table__caption<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Vehicle Specifications<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__head-cell<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Component<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__head-cell kmx-typography--align-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Specification<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__cell<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Drive Type<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__cell kmx-typography--align-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>2WD<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__cell<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Engine Size<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-table__cell kmx-typography--align-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>3.0L Engine<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+                                                    
+                                                    ...
+                                                    
+                                                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Fine Print</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--fine-print">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--fine-print<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>The way car buying should be<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Emphasis 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--emphasis-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--emphasis-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>The way car buying should be<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Flag Label</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--flag-label">Flag Label</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar mdc-tab-bar-upgraded">
+                                        <div class="mdc-tab mdc-tab--active mdc-ripple-upgraded" data-panel-target="1" style="--mdc-ripple-surface-width:160px; --mdc-ripple-surface-height:48px; --mdc-ripple-fg-size:96px; --mdc-ripple-fg-scale:1.84422;">HTML</div>
+                                        <span class="mdc-tab-bar__indicator" style="transform: translateX(0px) scale(1, 1); visibility: visible;"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>kmx-typography--flag-label<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Flag Label<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </body>
+        
+        <ltng:require scripts="{!join(',', 
+                               'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js',
+                               $Resource.mdcautoinit)}"
+                      afterScriptsLoaded="{!c.doAfter}"/>
+        
+    </div>
+</aura:component>

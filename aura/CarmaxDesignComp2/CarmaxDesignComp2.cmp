@@ -1,0 +1,774 @@
+<aura:component access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+        <head>
+            <title>Overview | CarMax Style Guide</title>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta charset="UTF-8" />
+            <meta name="format-detection" content="telephone=no" />
+            
+            <link rel="icon" type="image/png" href="https://design.carmax.com/static/img/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="https://design.carmax.com/static/img/favicon-16x16.png" sizes="16x16" />
+            <link rel="stylesheet" href="{!$Resource.bundlecss}" />
+        </head>
+        <body class="mdc-theme--background" >
+            <div class="app">
+                <header class="mdc-toolbar mdc-toolbar--fixed">
+                    <div class="mdc-toolbar__row">
+                        <section class="mdc-toolbar__section mdc-toolbar__section--logo mdc-toolbar__section--align-start">
+                            <button class="kmx-icon-button kmx-icon-button--tertiary mdc-toolbar__menu-icon js-menu" aria-label="menu">
+                                <span class="svg-icon-wrapper">
+                                    <span class="svg-icon">
+                                        XX
+                                    </span>
+                                </span>
+                            </button>
+                            
+                            <div class="logo-section">
+                                <img src="https://design.carmax.com/static/img/favicon-32x32.png" class="mdc-temporary-drawer__logo" alt="" />
+                            </div>
+                        </section>
+                        <section class="mdc-toolbar__section mdc-toolbar__section--nav">
+                            <nav class="mdc-select" role="listbox" tabindex="0">
+                                <span class="mdc-select__selected-text">Selected Domain</span>
+                                <div class="mdc-simple-menu mdc-select__menu">
+                                    <ul class="mdc-list mdc-simple-menu__items">
+                                        <li class="mdc-list-item" role="option" id="domain-design-system" aria-selected="true">
+                                            Design System
+                                        </li>
+                                        <li class="mdc-list-item" role="option" id="domain-brand">
+                                            Brand
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <nav class="mdc-list kmx-list--nav kmx-list--inline">
+                                <a class="mdc-list-item mdc-list-item--active" href="/getting-started/overview">Design System</a>
+                                <a class="mdc-list-item" href="#">Brand</a>
+                            </nav>
+                        </section>
+                    </div>
+                </header>
+                
+                <div class="mdc-toolbar-fixed-adjust"></div>
+                
+                <div class="app__container">
+                    
+                    
+                    <nav class="mdc-drawer mdc-permanent-drawer kmx-drawer--fixed">
+                        <nav class="mdc-drawer__content mdc-theme--primary-bg">
+                            <div class="mdc-list">
+                                <div class="mdc-list-group">
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Getting Started</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/getting-started/overview" class="mdc-list-item">Overview</a>
+                                    </nav>
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/getting-started/legos-team" class="mdc-list-item">The LEGOS Team</a>
+                                    </nav>
+                                    
+                                    
+                                    <div class="mdc-list-divider" role="separator"></div>
+                                    
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Foundation</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/foundation/colors" class="mdc-list-item">Colors</a>
+                                        <a href="/foundation/elevation" class="mdc-list-item">Elevation</a>
+                                        
+                                        <a href="/foundation/icons" class="mdc-list-item">Icons</a>
+                                        
+                                        <a href="/foundation/icons/customer-reviews" class="mdc-list-item nav-child">Customer Reviews Icons</a>
+                                        
+                                        <a href="/foundation/icons/vehicle-conditions" class="mdc-list-item nav-child">Vehicle Condition Icons</a>
+                                        <a href="/foundation/icons/vehicle-features" class="mdc-list-item nav-child">Vehicle Feature Icons</a>
+                                        <a href="/foundation/icons/vehicle-types" class="mdc-list-item nav-child">Vehicle Type Icons</a>
+                                        
+                                        <a href="/foundation/layout" class="mdc-list-item">Layout</a>
+                                        <a href="/foundation/typography" class="mdc-list-item">Typography</a>
+                                    </nav>
+                                    
+                                    
+                                    <div class="mdc-list-divider" role="separator"></div>
+                                    
+                                    
+                                    <div class="mdc-list-group__subheader">
+                                        <h3 class="kmx-typography--headline">Components</h3>
+                                    </div>
+                                    
+                                    
+                                    <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                        <a href="/components/buttons" class="mdc-list-item">Buttons</a>
+                                        
+                                        <a href="/components/forms/" class="mdc-list-item">Forms</a>
+                                        <a href="/components/forms/checkboxes" class="mdc-list-item nav-child">Checkboxes</a>
+                                        <a href="/components/forms/dropdowns" class="mdc-list-item nav-child">Dropdowns</a>
+                                        <a href="/components/forms/radio-buttons" class="mdc-list-item nav-child">Radio Buttons</a>
+                                        <a href="/components/forms/text-fields" class="mdc-list-item nav-child">Text Fields</a>
+                                        
+                                        <a href="/components/lists" class="mdc-list-item">Lists</a>
+                                        
+                                    </nav>
+                                    
+                                </div>
+                            </div>
+                            
+                        </nav>
+                    </nav>
+                    
+                    
+                    <aside id="drawer-toggle" class="mdc-drawer mdc-temporary-drawer">
+                        <nav class="mdc-temporary-drawer__drawer">
+                            <div class="mdc-temporary-drawer__toolbar-spacer">
+                                <img src="https://design.carmax.com/static/img/favicon-32x32.png" class="mdc-temporary-drawer__logo" alt="" />
+                            </div>
+                            <nav class="mdc-temporary-drawer__content mdc-theme--primary-bg">
+                                <div class="mdc-list">
+                                    <div class="mdc-list-group">
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Getting Started</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/getting-started/overview" class="mdc-list-item">Overview</a>
+                                        </nav>
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/getting-started/legos-team" class="mdc-list-item">The LEGOS Team</a>
+                                        </nav>
+                                        
+                                        
+                                        <div class="mdc-list-divider" role="separator"></div>
+                                        
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Foundation</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/foundation/colors" class="mdc-list-item">Colors</a>
+                                            <a href="/foundation/elevation" class="mdc-list-item">Elevation</a>
+                                            
+                                            <a href="/foundation/icons" class="mdc-list-item">Icons</a>
+                                            
+                                            <a href="/foundation/icons/customer-reviews" class="mdc-list-item nav-child">Customer Reviews Icons</a>
+                                            
+                                            <a href="/foundation/icons/vehicle-conditions" class="mdc-list-item nav-child">Vehicle Condition Icons</a>
+                                            <a href="/foundation/icons/vehicle-features" class="mdc-list-item nav-child">Vehicle Feature Icons</a>
+                                            <a href="/foundation/icons/vehicle-types" class="mdc-list-item nav-child">Vehicle Type Icons</a>
+                                            
+                                            <a href="/foundation/layout" class="mdc-list-item">Layout</a>
+                                            <a href="/foundation/typography" class="mdc-list-item">Typography</a>
+                                        </nav>
+                                        
+                                        
+                                        <div class="mdc-list-divider" role="separator"></div>
+                                        
+                                        
+                                        <div class="mdc-list-group__subheader">
+                                            <h3 class="kmx-typography--headline">Components</h3>
+                                        </div>
+                                        
+                                        
+                                        <nav class="mdc-list mdc-theme--text-primary-on-primary">
+                                            <a href="/components/buttons" class="mdc-list-item">Buttons</a>
+                                            
+                                            <a href="/components/forms/" class="mdc-list-item">Forms</a>
+                                            <a href="/components/forms/checkboxes" class="mdc-list-item nav-child">Checkboxes</a>
+                                            <a href="/components/forms/dropdowns" class="mdc-list-item nav-child">Dropdowns</a>
+                                            <a href="/components/forms/radio-buttons" class="mdc-list-item nav-child">Radio Buttons</a>
+                                            <a href="/components/forms/text-fields" class="mdc-list-item nav-child">Text Fields</a>
+                                            
+                                            <a href="/components/lists" class="mdc-list-item">Lists</a>
+                                            
+                                        </nav>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </nav>
+                        </nav>
+                    </aside>
+                    
+                    
+                    <div class="app__container__content">
+                        <section class="kmx-layout-grid max-width--md" id="Typefaces">
+                            <h1 class="kmx-typography--display-4 kmx-text-grey-900">Typography</h1>
+                            <hr class="horiz-rule--content"></hr>
+                            <h2 class="kmx-typography--display-2">Typefaces</h2>
+                            <h3 class="kmx-typography--display-1">Montserrat</h3>
+                            <p class="kmx-typography--body-1">Considered our brand&apos;s primary font family, we use Montserrat in areas where reinforcing the brand are necessary and valuable.</p>
+                            <p class="kmx-typography--body-1">Available weights:</p>
+                            <ul class="kmx-typography--ul">
+                                <li class="kmx-typography--font-main">500 (Medium)</li>
+                            </ul>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--font-main">Montserrat 500 (Medium)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <div class="kmx-typography--display-2 kmx-typography--font-main">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&amp;​‌&lt;​‌-​‌+​‌÷​‌×​‌=​‌​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.*
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--font-main&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Roboto</h3>
+                            <p class="kmx-typography--body-1">Our secondary font, Roboto, is used in conjunction with our main font to help establish a clear hiearchy between the primary and secondary information on page or component.</p>
+                            <p class="kmx-typography--body-1">Available weights:</p>
+                            <ul class="kmx-typography--ul">
+                                <li class="kmx-typography--weight-300">300 (Light)</li>
+                                <li class="kmx-typography--weight-400">400 (Regular)</li>
+                                <li class="kmx-typography--weight-700">700 (Bold)</li>
+                            </ul>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-300">Roboto 300 (Light)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-300">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&amp;​‌&lt;​‌-​‌+​‌÷​‌×​‌=​‌​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.*
+                                        </span>
+                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--font-alt&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-400">Roboto 400 (Regular)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-400">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&amp;​‌&lt;​‌-​‌+​‌÷​‌×​‌=​‌​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.*
+                                        </span>                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--font-alt&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1 kmx-typography--weight-700">Roboto 700 (Bold)</p>
+                                </div>
+                                <div class="kmx-card__supporting-text kmx-card__sample-text">
+                                    <p class="kmx-typography--display-2 kmx-typography--font-alt kmx-typography--weight-700">
+                                        <span class="sg-typeface-repertoire">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+                                        <span class="sg-typeface-repertoire">abcdefghijklmnopqrstuvwxyz</span>
+                                        <span class="sg-typeface-repertoire">1234567890</span>
+                                        <span class="sg-typeface-repertoire sg-typeface-repertoire--spaced">
+                                            &gt;‘‌?​‌’​‌“​‌!​‌”​‌(​‌%​‌)​‌[​‌#​‌]​‌{​‌@​‌}​‌/​‌&amp;​‌&lt;​‌-​‌+​‌÷​‌×​‌=​‌​‌®​‌©​‌$​‌€​‌£​‌¥​‌¢​‌:​‌;​‌,​‌.*
+                                        </span>                                        
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--font-alt&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="horiz-rule--content"></hr>
+                            <h2 class="kmx-typography--display-2">Style Classes</h2>
+                            <p class="kmx-typography--body-1">Elements are styled through opt in classes, not globally. This helps keep our HTML structure separate from our visual hiearchy.</p>
+                            <p class="kmx-typography--body-1">In other words, we can style <span class="kmx-typography--font-mono">&lt;h1&gt;</span> elements individually, and make them appear visually smaller or larger to the end user without compromising the importance of the <span class="kmx-typography--font-mono">&lt;h1&gt;</span> to things like SEO.</p>
+                            <hr class="horiz-rule--content"></hr>
+                        </section>
+                        
+                        <section class="kmx-layout-grid max-width--md" id="Styles">
+                            <h2 class="kmx-typography--display-2">Styles</h2>
+                            <h3 class="kmx-typography--display-1">Display 4</h3>
+                            <p class="kmx-typography--body-1">The Display 4 style should be used sparingly, preferably no more than once on a page. Display 4 is a good option for top of page headlines that we want to draw attention to.</p>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-4">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--display-4&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 3</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-3">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--display-3&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 2</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-2">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--display-2&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Display 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--display-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--display-1&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Headline</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--headline">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--headline&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Body 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">&lt;p class=&quot;kmx-typography--body-1&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Body 2</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-2">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--body-2&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Links</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--body-1">
+                                        <a href="#">Go to CarMax.com</a>
+                                    </p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--link&quot; &gt;The way car buying should be.&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Unordered List</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <ul class="kmx-typography--ul">
+                                        <li>List Item #1</li>
+                                        <li>List Item #2</li>
+                                        <li>List Item #3</li>
+                                    </ul>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;ul class=&quot;kmx-typography--ul&quot;&gt;
+                                                        &lt;li&gt;List Item #1&lt;/li&gt;
+                                                        &lt;li&gt;List Item #2&lt;/li&gt;
+                                                        &lt;li&gt;List Item #3&lt;/li&gt;
+                                                        &lt;/ul&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Ordered List</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <ol class="kmx-typography--ol">
+                                        <li>List Item #1</li>
+                                        <li>List Item #2</li>
+                                        <li>List Item #3</li>
+                                    </ol>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;ol class=&quot;kmx-typography--ol&quot;&gt;
+                                                        &lt;li&gt;List Item #1&lt;/li&gt;
+                                                        &lt;li&gt;List Item #2&lt;/li&gt;
+                                                        &lt;li&gt;List Item #3&lt;/li&gt;
+                                                        &lt;/ol&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Table</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <table class="kmx-typography--body-1 kmx-table">
+                                        <caption class="kmx-typography--display-1 kmx-table__caption">Vehicle Specifications</caption>
+                                        <thead>
+                                            <tr class="kmx-table__row">
+                                                <th class="kmx-table__head-cell">Component</th>
+                                                <th class="kmx-table__head-cell kmx-typography--align-right">Specification</th>
+                                            </tr>
+                                        </thead>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Drive Type</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">2WD</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Engine Size</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">3.0L Engine</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Number of Cylinders</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">6 Cylinders</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Horsepower</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">380 Horsepower @6500 RPM</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Torque (ft-lbs)</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">339 Torque @3500 RPM</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Compression Ratio</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">11:1</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Camshaft</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">Variable Timing DOHC</td>
+                                        </tr>
+                                        <tr class="kmx-table__row">
+                                            <td class="kmx-table__cell">Engine Type</td>
+                                            <td class="kmx-table__cell kmx-typography--align-right">Supercharged</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">&lt;table class=&quot;kmx-typography--body-1 kmx-table&quot;&gt;
+                                                        &lt;caption class=&quot;kmx-typography--display-1 kmx-table__caption&quot;&gt;Vehicle Specifications&lt;/caption&gt;
+                                                        &lt;thead&gt;
+                                                        &lt;tr class=&quot;kmx-table__row&quot;&gt;
+                                                        &lt;th class=&quot;kmx-table__head-cell&quot;>Component&lt;/th&gt;
+                                                        &lt;th class=&quot;kmx-table__head-cell kmx-typography--align-right">Specification&lt;/th&gt;
+                                                        &lt;/tr&gt;
+                                                        &lt;/thead&gt;
+                                                        &lt;tr class=&quot;kmx-table__row&quot;&gt;
+                                                        &lt;td class=&quot;kmx-table__cell&quot;&gt;Drive Type&lt;/td&gt;
+                                                        &lt;td class=&quot;kmx-table__cell kmx-typography--align-right&quot;>2WD&lt;/td&gt;
+                                                        &lt;/tr&gt;
+                                                        &lt;tr class=&quot;kmx-table__row&quot;&gt;
+                                                        &lt;td class=&quot;kmx-table__cell&quot;&gt;Engine Size&lt;/td&gt;
+                                                        &lt;td class=&quot;kmx-table__cell kmx-typography--align-right&quot;>3.0L Engine&lt;/td&gt;
+                                                        &lt;/tr&gt;
+                                                        
+                                                        ...
+                                                        
+                                                        &lt;/table&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Fine Print</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--fine-print">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--fine-print&quot;&gt;The way car buying should be&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Emphasis 1</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--emphasis-1">The way car buying should be.</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--emphasis-1&quot;&gt;The way car buying should be&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="kmx-typography--display-1">Flag Label</h3>
+                            <div class="kmx-card kmx-elevation-02 sg-example-card">
+                                <div class="kmx-card__primary">
+                                    <p class="kmx-typography--flag-label">Flag Label</p>
+                                </div>
+                                <div class="kmx-tab-panels">
+                                    <nav class="mdc-tab-bar">
+                                        <div class="mdc-tab mdc-tab--active" data-panel-target="1">HTML</div>
+                                        <span class="mdc-tab-bar__indicator"></span>
+                                    </nav>
+                                    <div class="kmx-panels">
+                                        <div class="kmx-panel active" data-panel-id="1" role="tabpanel">
+                                            <div class="kmx-snippet--code">
+                                                <pre>
+                                                    <code class="language-markup">
+                                                        &lt;p class=&quot;kmx-typography--flag-label&quot;&gt;Flag Label&lt;/p&gt;
+                                                    </code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            
+        </body>
+        
+        <ltng:require scripts="{!join(',',
+                               $Resource.bundlejs,
+                               $Resource.mcwES5)}"
+                      afterScriptsLoaded="{!c.doAfter}"/>
+                      
+</aura:component>

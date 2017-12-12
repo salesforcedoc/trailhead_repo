@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -6,9 +6,6 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides><actionOverrides>
-        <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>List</actionName>
@@ -42,24 +39,6 @@
         <trackHistory>true</trackHistory>
     </fields><fields>
         <fullName>Status</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Draft</fullName>
-                <default>true</default>
-                <reviewed>false</reviewed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Reviewed</fullName>
-                <default>false</default>
-                <reviewed>true</reviewed>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Duplicate</fullName>
-                <default>false</default>
-                <reviewed>false</reviewed>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>

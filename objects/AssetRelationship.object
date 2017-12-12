@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -9,9 +9,6 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides><actionOverrides>
-        <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>List</actionName>
@@ -29,10 +26,6 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides><fields>
-        <fullName>AssetId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>MasterDetail</type>
-    </fields><fields>
         <fullName>FromDate</fullName>
         <trackHistory>false</trackHistory>
     </fields><fields>
@@ -40,27 +33,16 @@
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields><fields>
+        <fullName>ToDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields><fields>
         <fullName>RelationshipType</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Replacement</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Upgrade</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Crossgrade</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields><fields>
-        <fullName>ToDate</fullName>
+        <fullName>AssetId</fullName>
         <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
