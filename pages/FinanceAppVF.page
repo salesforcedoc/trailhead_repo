@@ -1,0 +1,61 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" controller="FinanceAppController">
+    <div id="app">
+        Loading...
+    </div>
+    
+    <script>
+    function axiom(resource, parameters, config) {
+        return new Promise(function(resolve, reject) {
+            Visualforce.remoting.Manager.invokeAction(
+                resource,
+                parameters,
+                function(result, event) {
+                    if(!event.status) {
+                        reject(event.message);
+                    } else {
+                        resolve(result);
+                    }
+                },
+                config);
+        });
+    };
+    
+    window.salesforceApi = {
+        getContact: function(contactId) {
+            return axiom(
+                '{!$RemoteAction.FinanceAppController.GetContact}',
+                contactId
+            ).then((contact) => {
+                return {
+                name: contact.Name,
+                mailingAddress: contact.MailingAddress.street
+            };
+                   });
+        },
+        submitFinanceApplication: function(data) {
+            return axiom(
+                '{!$RemoteAction.FinanceAppController.Save}',
+                data
+            ).then((decisions) => {
+                return decisions.map((decision) => {
+                return {
+                id: decision.Id,
+                lender: decision.Lender,
+                amount: decision.Amount,
+                downPayment: decision.DownPayment,
+                monthlyPayment: decision.MonthlyPayment,
+                term: decision.Term,
+                apr: decision.APR,
+                paymentStartDate: decision.PaymentStartDate
+            };
+                   });
+        });
+    }
+    };
+    </script>
+
+    <apex:includeScript loadOnReady="true" value="https://unpkg.com/react@15.6.0/dist/react.js"/>
+    <apex:includeScript loadOnReady="true" value="https://unpkg.com/react-dom@15.6.0/dist/react-dom.js"/>
+    <apex:includeScript loadOnReady="true" value="{!$Resource.OrderEntry + '/OrderEntry.js'}"/>
+    
+</apex:page>
